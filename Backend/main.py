@@ -11,7 +11,7 @@ import datetime
 import os
 
 app = FastAPI()
-client = MongoClient(os.getenv("MONGO_URI", "mongodb+srv://mongodbacc:mongodbacc@cluster0.ny1gw.mongodb.net/"))
+client = MongoClient(os.getenv("MONGO_URI", "YOUR URL"))
 db = client["secure_chat"]
 messages_collection = db["messages"]
 users_collection = db["users"]
